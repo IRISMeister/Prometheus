@@ -15,13 +15,17 @@ http://localhost:3000/
  data source = prometheus http://prometheus:9090/
 
 
+To load datasources, dashboards
+https://grafana.com/docs/grafana/latest/http_api/data_source/
+https://grafana.com/docs/grafana/latest/http_api/dashboard/
+
+
 To see what data sources you have.
 # curl -s "http://localhost:3000/api/datasources" -u admin:xxx
 # curl -s "http://localhost:3000/api/datasources/name/Prometheus" -u admin:xxx
 
-
-To load datasources, dashboards
-http://www.inanzzz.com/index.php/post/yglp/export-and-import-grafana-dashboard-and-data-sources
-https://akng-engineer.hatenablog.com/entry/2019/07/11/231047
-https://qiita.com/chroju/items/f7df76c2cd11b935a0a5
-
+Use UI/dashboard/Setting to export existing db in json format. 
+You have to change some values before import via api.
+"id": null
+"uid": null
+"Version" :0

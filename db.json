@@ -1,4 +1,5 @@
 {
+ "dashboard": {  
   "annotations": {
     "list": [
       {
@@ -15,7 +16,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": 1,
+  "id": null,
   "links": [],
   "panels": [
     {
@@ -180,6 +181,7 @@
   },
   "timezone": "",
   "title": "dashboard1",
-  "uid": "Z6Ya1y-Wz",
-  "version": 3
+  "uid": null,
+  "version": 0
+ }
 }
