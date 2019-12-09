@@ -1,0 +1,13 @@
+global:
+  scrape_interval:     15s # By default, scrape targets every 15 seconds.
+
+  external_labels:
+    monitor: 'iris-monitor'
+
+scrape_configs:
+  - job_name: 'isc-iris'
+
+    scrape_interval: 5s
+    metrics_path: '/api/monitor/metrics'
+    static_configs:
+    - targets: ['iris:52773']

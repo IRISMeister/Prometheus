@@ -1,0 +1,46 @@
+version: '3.2'
+
+services:
+  irissvc:
+    image: store/intersystems/irishealth-community:2019.4.0.379.0
+    hostname: iris
+    container_name: iris
+
+    ports:
+    # superserver default port 
+    - "9001:51773"
+    # webserver/management portal port
+    - "9002:52773"
+    environment:
+    - TZ=JST-9
+    networks:
+    - iris-tier
+
+  prometheussvc:
+    hostname: prometheus
+    container_name: prometheus
+    image: prom/prometheus
+    volumes:
+    - /host_mnt/c/temp/prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+    - "9090:9090"
+    networks:
+    - iris-tier
+
+  grafanasvc:
+    hostname: grafana
+    container_name: grafana
+    image: grafana/grafana
+    ports:
+    - "3000:3000"
+    volumes:
+    - grafana-storage:/var/lib/grafana
+    networks:
+    - iris-tier
+
+volumes:
+  grafana-storage:
+
+networks:
+  iris-tier:
+    driver: bridge
