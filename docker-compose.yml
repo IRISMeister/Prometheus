@@ -24,6 +24,8 @@ services:
     - ./prometheus.yml:/etc/prometheus/prometheus.yml
     ports:
     - "9090:9090"
+    environment:
+    - TZ=JST-9
     networks:
     - iris-tier
 
@@ -35,6 +37,8 @@ services:
     - "3000:3000"
     volumes:
     - grafana-storage:/var/lib/grafana
+    environment:
+    - TZ=JST-9
     networks:
     - iris-tier
 
