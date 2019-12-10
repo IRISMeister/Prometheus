@@ -20,8 +20,8 @@ http://localhost:3000/
 
 ## setting of grafana
 admin password is specified in pwd.json  
-data source = prometheus http://prometheus:9090/
-
+data source = prometheus http://prometheus:9090/  
+You should see 'dashboard1' in your dashboard list.  
 
 ## APIs of grafana
 https://grafana.com/docs/grafana/latest/http_api/data_source/
