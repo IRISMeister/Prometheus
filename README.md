@@ -19,7 +19,7 @@ http://localhost:9090/
 http://localhost:3000/  
 
 ## setting of grafana
-admin password is specified in pwd.json 
+admin password is specified in pwd.json  
 data source = prometheus http://prometheus:9090/
 
 
@@ -33,7 +33,7 @@ To see what data sources you have.
 # curl -s "http://localhost:3000/api/datasources" -u admin:xxx
 # curl -s "http://localhost:3000/api/datasources/name/Prometheus" -u admin:xxx
 ```
-Use UI/dashboard/Setting to export existing db in json format. 
+Use UI/dashboard/Setting to export existing db in json format.   
 You have to change some values before import via APIs.
 "id": null  
 "uid": null  
