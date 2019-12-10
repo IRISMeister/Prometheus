@@ -8,23 +8,24 @@ https://community.intersystems.com/post/monitoring-intersystems-iris-using-built
 # docker-compose up -d
 # ./config.sh
 ```
+Then, navigate your browser to grafana UI.  
 
-## related URLs
+## URL links to each components
 * IRIS  
 http://localhost:9002/csp/sys/%25CSP.Portal.Home.zen  
 http://localhost:9002/api/monitor/metrics
-* prometheus  
+* prometheus UI  
 http://localhost:9090/
-* grafana  
+* grafana UI  
 http://localhost:3000/  
 
 ## setting of grafana
 admin password is specified in pwd.json  
 data source = prometheus http://prometheus:9090/  
-You should see 'dashboard1' in your dashboard list.  
+You should see 'dashboard1' in your dashboard list. Just click it.  
 
-## APIs of grafana
-https://grafana.com/docs/grafana/latest/http_api/data_source/
+## About APIs of grafana
+https://grafana.com/docs/grafana/latest/http_api/data_source/  
 https://grafana.com/docs/grafana/latest/http_api/dashboard/
 
 ## some tips
