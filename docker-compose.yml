@@ -17,6 +17,8 @@ services:
     - iris-tier
 
   prometheussvc:
+    depends_on:
+      - irissvc
     hostname: prometheus
     container_name: prometheus
     image: prom/prometheus
@@ -30,6 +32,8 @@ services:
     - iris-tier
 
   grafanasvc:
+    depends_on:
+      - prometheussvc
     hostname: grafana
     container_name: grafana
     image: grafana/grafana
