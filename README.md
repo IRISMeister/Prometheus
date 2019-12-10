@@ -35,7 +35,7 @@ To see what data sources you have.
 # curl -s "http://localhost:3000/api/datasources/name/Prometheus" -u admin:xxx
 ```
 Use UI/dashboard/Setting to export existing db in json format.   
-You have to change some values before import via APIs.
+You have to change some values before import via APIs.  See db.json.  
 "id": null  
 "uid": null  
 "Version" :0  
