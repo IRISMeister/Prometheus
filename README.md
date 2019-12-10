@@ -3,6 +3,12 @@
 https://community.intersystems.com/post/making-prometheus-monitoring-intersystems-cach%C3%A9
 https://community.intersystems.com/post/monitoring-intersystems-iris-using-built-rest-api
 
+## how to run
+```
+# docker-compose up -d
+# ./config.sh
+```
+
 ## related URLs
 * IRIS  
 http://localhost:9002/csp/sys/%25CSP.Portal.Home.zen  
