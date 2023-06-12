@@ -12,17 +12,20 @@ Then, navigate your browser to grafana UI.
 
 ## URL links to each components
 * IRIS  
-http://localhost:9002/csp/sys/%25CSP.Portal.Home.zen  
+http://localhost:9002/csp/sys/%25CSP.Portal.Home.zen    
 http://localhost:9002/api/monitor/metrics
+
 * prometheus UI  
 http://localhost:9090/
+
 * grafana UI  
-http://localhost:3000/  
+http://localhost:3000/    Username: admin, Password: Grafana-User
+
+You should see 'dashboard1' in your dashboard under Gneral folder. Just click it.  
 
 ## setting of grafana
 admin password is specified in pwd.json  
 data source = prometheus http://prometheus:9090/  
-You should see 'dashboard1' in your dashboard list. Just click it.  
 
 ## About APIs of grafana
 https://grafana.com/docs/grafana/latest/http_api/data_source/  
